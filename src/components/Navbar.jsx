@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Navbar = () => {
     return (
-        <nav className="border mb-4 flex justify-end text-xs sm:text-lg sm:bg-blue-500">
+        <nav className=" mb-4 flex justify-end text-xs sm:text-lg bg-white dark:bg-gray-900">
             <a href="#" className="mx-2">
                 Intro
             </a>

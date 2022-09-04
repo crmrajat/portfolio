@@ -1,9 +1,9 @@
-import React from 'react';
 import me from '../assets/me.jpg';
 
-const Introduction = () => {
+const Introduction = (props) => {
+    const aboutMe = props.data;
     return (
-        <article className="my-4 flex  flex-col items-center border lg:flex-row-reverse sm:justify-between ">
+        <article className="my-4 flex  flex-col items-center  lg:flex-row-reverse sm:justify-between bg-white dark:bg-gray-900">
             <section className="p-4">
                 <img
                     className="max-h-[400px] sm:max-h-max"
@@ -15,14 +15,7 @@ const Introduction = () => {
                 <h1 className="text-3xl sm:text-7xl  text-center">
                     Introduction
                 </h1>
-                <p className="text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Illo similique hic maiores doloribus aperiam nemo quibusdam
-                    neque cum facilis, recusandae sit possimus atque impedit
-                    perferendis numquam iusto cumque nam inventore. Ullam
-                    corporis distinctio debitis quod aperiam dignissimos modi
-                    dolorum iure esse rem molestiae soluta maiores
-                </p>
+                <p className="text-sm sm:text-base">{aboutMe}</p>
             </section>
         </article>
     );
