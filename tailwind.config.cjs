@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
-    content: ['./index.html', './src/**/*.{js,jsx}'],
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
     mode: 'jit',
     theme: {
         extend: {
@@ -11,16 +13,16 @@ module.exports = {
                 dimBlue: 'rgba(9, 151, 124, 0.1)',
             },
             fontFamily: {
-                poppins: ['Poppins', 'sans-serif'],
+                sans: ['Poppins', 'sans-serif'], // Overriding the default font family
+                test: 'Consolas',
             },
-        },
-        screens: {
-            xs: '480px',
-            ss: '620px',
-            sm: '768px',
-            md: '1060px',
-            lg: '1200px',
-            xl: '1700px',
+            backgroundImage: {
+                // Projects gif url
+                p1: "url('/src/assets/a1.gif')",
+                p2: "url('/src/assets/a2.gif')",
+                p3: "url('/src/assets/a3.gif')",
+                p4: "url('/src/assets/a4.gif')",
+            },
         },
     },
     plugins: [],
