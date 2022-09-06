@@ -16,29 +16,34 @@ export const ProjectsData = [
     {
         name: 'Chatingale',
         about: 'A real time chat application',
-        website: 'www.google.com',
+        websiteUrl: 'www.google.com',
+        codeUrl: 'www.google.com',
         gif: 'bg-p1',
     },
     {
         name: 'Text to Speech',
         about: 'Converts text to speech ',
-        website: 'www.google.com',
+        websiteUrl: 'www.google.com',
+        codeUrl: 'www.google.com',
         gif: 'bg-p2',
     },
     {
         name: 'Speech to Text',
         about: 'Converts speech to text ',
-        website: 'www.google.com',
+        websiteUrl: 'www.google.com',
+        codeUrl: 'www.google.com',
         gif: 'bg-p3',
     },
 ];
 
-export const IntroductionData = `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-Illo similique hic maiores doloribus aperiam nemo quibusdam
-neque cum facilis, recusandae sit possimus atque impedit
-perferendis numquam iusto cumque nam inventore. Ullam
-corporis distinctio debitis quod aperiam dignissimos modi
-dolorum iure esse rem molestiae soluta maiores`;
+export const IntroductionData = `
+Hey👋  My name is RAJAT BORA and i am an 
+aspiring Full Stack Developer with
+a keen interest in new technologies.
+I have nearly 3 years of experience in
+web development and contributed to a couple
+of projects for web and mobile environments.
+`;
 
 export const SkillsData = [
     'React',
@@ -50,8 +55,8 @@ export const SkillsData = [
 
 export const ExperienceData = [
     {
-        companyName: 'Wishworks solution',
-        startDate: new Date(2016, 1, 20),
+        companyName: 'Wishworks solutions',
+        startDate: new Date('20-feb-2019'),
         endDate: null,
         post: 'Software developer',
         points: [
@@ -61,8 +66,8 @@ export const ExperienceData = [
         ],
     },
     {
-        companyName: 'Wishworks solution',
-        startDate: new Date(2016, 1, 20),
+        companyName: 'Wishworks solutions',
+        startDate: new Date('20-feb-2019'),
         endDate: null,
         post: 'Intern',
         points: [
@@ -73,8 +78,8 @@ export const ExperienceData = [
     },
     {
         companyName: 'World Wide Fund for Nature',
-        startDate: new Date(2016, 1, 20),
-        endDate: null,
+        startDate: new Date('20-feb-2019'),
+        endDate: new Date('20-jan-2020'),
         post: 'Intern',
         points: [
             'sartorial biodiesel vexillologist',

@@ -1,21 +1,28 @@
 import me from '../assets/me.jpg';
+import styles from '../styles';
 
 const Introduction = (props) => {
     const aboutMe = props.data;
     return (
-        <article className="my-4 flex  flex-col items-center  lg:flex-row-reverse sm:justify-between bg-white dark:bg-gray-900">
-            <section className="p-4">
+        <article
+            className={[
+                `${styles.card}  
+                flex flex-col gap-8
+                 place-items-center
+                md:flex-row
+                `,
+            ]}
+        >
+            <section className="flex-1 ">
                 <img
-                    className="max-h-[400px] sm:max-h-max"
+                    className="h-full w-full object-cover  rounded-lg"
                     src={me}
                     alt="my image"
                 />
             </section>
-            <section className="p-4">
-                <h1 className="text-3xl sm:text-7xl  text-center">
-                    Introduction
-                </h1>
-                <p className="text-sm sm:text-base">{aboutMe}</p>
+            <section className="flex-1 ">
+                <h1 className={`${styles.heading} `}>Introduction 👨🏽‍💻</h1>
+                <p className={`${styles.paragraph}`}>{aboutMe}</p>{' '}
             </section>
         </article>
     );

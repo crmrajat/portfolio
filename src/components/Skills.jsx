@@ -1,11 +1,11 @@
 const Skills = (props) => {
     const skillsList = props.data;
     return (
-        <section className="mt-4 bg-white dark:bg-gray-900">
+        <section className="">
             <div className="container px-6 py-10 mx-auto">
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
-                        Skills & Technologies used 🧑🏽‍💻
+                        Skills & Technologies used 🚀
                     </h1>
                 </div>
                 <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

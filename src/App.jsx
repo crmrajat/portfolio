@@ -20,7 +20,7 @@ function App() {
     const [experience, setExperience] = useState(ExperienceData);
 
     return (
-        <div className="w-full p-4 text-poppins">
+        <div className="container mx-auto bg-gray-900">
             <Navbar />
             <Introduction data={introduction} />
             <Projects data={projects} />
@@ -31,9 +31,3 @@ function App() {
 }
 
 export default App;
-
-{
-    /* <h4 className={`text-secondary bg-dimWhite font-test`}>
-    Hello world!
-</h4> */
-}

@@ -1,8 +1,8 @@
 const Projects = (props) => {
     const projectsList = props.data;
     return (
-        <article className="my-4">
-            <section className="bg-white dark:bg-gray-900">
+        <article className="">
+            <section className="">
                 <div className="container px-6 py-10 mx-auto">
                     <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
                         Personal Projects 🪴
@@ -19,7 +19,7 @@ const Projects = (props) => {
                                         onClick={() => {
                                             console.log(
                                                 '💀 navigate to :',
-                                                item.website
+                                                item.websiteUrl
                                             );
                                         }}
                                         className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
