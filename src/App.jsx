@@ -20,13 +20,13 @@ function App() {
     const [experience, setExperience] = useState(ExperienceData);
 
     return (
-        <div className="container mx-auto bg-gray-900">
+        <>
             <Navbar />
             <Introduction data={introduction} />
             <Projects data={projects} />
             <Skills data={skills} />
             <Experience data={experience} />
-        </div>
+        </>
     );
 }
 

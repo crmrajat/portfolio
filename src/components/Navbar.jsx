@@ -2,24 +2,26 @@ const Navbar = () => {
     return (
         <nav
             className="
-        gap-5
-        text-sm 
-        mt-4 mx-4  
-        flex justify-end 
-        tracking-wide 
-        sm:text-lg
-        sm:gap-10 "
+            gradient-2
+            text-gray-200
+            gap-5
+            p-4
+            text-sm 
+            flex justify-end 
+            tracking-wide 
+            sm:text-lg
+            sm:gap-10 "
         >
-            <a href="#" className="underlineGradient mx-2">
+            <a href="#" className="underlineGradient">
                 Intro
             </a>
-            <a href="#" className="underlineGradient mx-2">
+            <a href="#" className="underlineGradient ">
                 Projects
             </a>
-            <a href="#" className="underlineGradient mx-2">
+            <a href="#" className="underlineGradient ">
                 Skills
             </a>
-            <a href="#" className="underlineGradient mx-2">
+            <a href="#" className="underlineGradient ">
                 Experience
             </a>
         </nav>

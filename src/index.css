@@ -14,6 +14,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
+    background-color: rgb(191, 211, 255);
     background-color: rgb(17, 24, 39);
     
     scroll-behavior: smooth;
@@ -25,6 +26,21 @@
 
     transition: all 300ms ease-in-out;
 }
+
+.gradient-1{
+    @apply
+    bg-gradient-to-r
+    from-green-400 
+    to-blue-500
+}
+
+.gradient-2{
+    @apply
+    bg-gradient-to-r
+    from-sky-400 
+    to-indigo-600
+}
+
 
 .heading {
     @apply  
@@ -55,14 +71,24 @@ text-gray-200
 
 .underlineGradient{
     @apply
+    gradient-1
     ease-in-out 
     duration-300 
-    bg-gradient-to-r
-    from-green-500 
-    to-cyan-500
     bg-left-bottom
     bg-no-repeat
     no-underline 
     bg-[length:0%_2px] 
     hover:bg-[length:100%_3px]
 }
+
+.btn {
+    @apply 
+    gradient-1
+    font-semibold 
+    py-2
+     px-4
+      rounded
+     text-white
+  }
+
+  .btn:hover {@apply  gradient-2}

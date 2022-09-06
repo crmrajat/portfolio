@@ -37,7 +37,7 @@ export const ProjectsData = [
 ];
 
 export const IntroductionData = [
-    'Hey👋  My name is ',
+    '👋 Hi, My name is ',
     'Rajat Bora',
     ' and i am an aspiring Full Stack Developer with a keen interest in new technologies. I have nearly ',
     '3 years',
