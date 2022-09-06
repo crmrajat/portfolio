@@ -10,16 +10,16 @@ const Navbar = () => {
         sm:text-lg
         sm:gap-10 "
         >
-            <a href="#" className="mx-2d">
+            <a href="#" className="underlineGradient mx-2">
                 Intro
             </a>
-            <a href="#" className="mx-2d">
+            <a href="#" className="underlineGradient mx-2">
                 Projects
             </a>
-            <a href="#" className="mx-2d">
+            <a href="#" className="underlineGradient mx-2">
                 Skills
             </a>
-            <a href="#" className="mx-2d">
+            <a href="#" className="underlineGradient mx-2">
                 Experience
             </a>
         </nav>
