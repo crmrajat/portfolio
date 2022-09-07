@@ -15,52 +15,46 @@ const Experience = (props) => {
     };
 
     return (
-        <article className="">
-            <section className="">
-                <div className="container px-6 py-10 mx-auto">
-                    <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
-                        Experience 🧗🏽‍♂️
-                    </h1>
+        <section id="experienceView" className="card">
+            <h1 className="heading">Experience 🧗🏽‍♂️</h1>
 
-                    <div className="container px-5 py-10 mx-auto">
-                        {experienceList.map((item, index) => {
-                            return (
-                                <div
-                                    key={'exp' + index}
-                                    className="py-8 flex flex-wrap md:flex-nowrap"
-                                >
-                                    <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                        <span className="font-semibold title-font text-gray-700 capitalize">
-                                            {item.companyName}
-                                        </span>
-                                        <span className="mt-2 text-gray-500 text-sm font-semibold">
-                                            {item.post}
-                                        </span>
-                                        <span className="mt-1 text-gray-500 text-sm">
-                                            {formatDate(item.startDate) +
-                                                ' - ' +
-                                                formatDate(item.endDate)}
-                                        </span>
-                                    </div>
-                                    <ul className="md:flex-grow list-disc list-inside">
-                                        {item.points.map((point, index) => {
-                                            return (
-                                                <li
-                                                    key={'point' + index}
-                                                    className="leading-relaxed"
-                                                >
-                                                    {point}
-                                                </li>
-                                            );
-                                        })}
-                                    </ul>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-        </article>
+            <div className="lg:w-4/5 mx-auto">
+                {experienceList.map((item, index) => {
+                    return (
+                        <div
+                            key={'exp' + index}
+                            className="mb-16 sm:mb-10 flex flex-wrap md:flex-nowrap"
+                        >
+                            <div className="md:w-72 md:mb-0 mb-4 flex-shrink-0 flex flex-col ">
+                                <span className=" text-white text-lg my-4 sm:font-bold capitalize tracking-wide">
+                                    {item.companyName}
+                                </span>
+                                <span className="text-emerald-300 sm:text-lg font-light">
+                                    {item.post}
+                                </span>
+                                <span className=" text-emerald-100 sm:text-lg  font-light">
+                                    {formatDate(item.startDate) +
+                                        ' - ' +
+                                        formatDate(item.endDate)}
+                                </span>
+                            </div>
+                            <ul className="paragraph md:flex-grow list-disc list-inside">
+                                {item.points.map((point, index) => {
+                                    return (
+                                        <li
+                                            key={'point' + index}
+                                            className="leading-relaxed"
+                                        >
+                                            {point}
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
     );
 };
 

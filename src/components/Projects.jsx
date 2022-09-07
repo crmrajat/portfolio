@@ -1,10 +1,10 @@
 const Projects = (props) => {
     const projectsList = props.data;
     return (
-        <section className="card">
+        <section id="projectView" className="card">
             <h1 className="heading">Personal Projects 🪴</h1>
 
-            <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 ">
+            <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:w-4/5 mx-auto">
                 {projectsList.map((item, index) => {
                     return (
                         <div
@@ -24,7 +24,7 @@ const Projects = (props) => {
                                 <h2 className="mt-4 text-2xl font-semibold text-white capitalize">
                                     {item.name}
                                 </h2>
-                                <p className="mt-1 text-md tracking-wider font-light text-blue-200 capitalize">
+                                <p className="mt-1 text-md tracking-wider font-light text-emerald-100 capitalize">
                                     {item.about}
                                 </p>
                                 <div className="flex flex-col gap-4 mt-4">

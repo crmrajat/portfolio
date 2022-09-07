@@ -1,9 +1,10 @@
 const Navbar = () => {
+    const anchorClass =
+        'underlineGradient hover:font-bold hover:text-xl hover:tracking-wider';
     return (
         <nav
             className="
-            gradient-3
-            text-gray-200
+            gradient-2
             gap-5
             p-4
             text-sm 
@@ -12,16 +13,16 @@ const Navbar = () => {
             sm:text-lg
             sm:gap-10 "
         >
-            <a href="#" className="underlineGradient">
+            <a href="#introductionView" className={anchorClass}>
                 Intro
             </a>
-            <a href="#" className="underlineGradient">
+            <a href="#projectView" className={anchorClass}>
                 Projects
             </a>
-            <a href="#" className="underlineGradient">
+            <a href="#skillView" className={anchorClass}>
                 Skills
             </a>
-            <a href="#" className="underlineGradient">
+            <a href="#experienceView" className={anchorClass}>
                 Experience
             </a>
         </nav>
