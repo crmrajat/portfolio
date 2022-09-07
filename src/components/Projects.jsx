@@ -27,12 +27,14 @@ const Projects = (props) => {
                                 <p className="mt-1 text-md tracking-wider font-light text-blue-200 capitalize">
                                     {item.about}
                                 </p>
-                                <button className="btn  mt-4">
-                                    View Code 🧩
-                                </button>
-                                <button className="btn  mt-4">
-                                    View Demo 👀
-                                </button>
+                                <div className="flex flex-col gap-4 mt-4">
+                                    <button className="btn">
+                                        View Code 🧩
+                                    </button>
+                                    <button className="btn">
+                                        View Demo 👀
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     );

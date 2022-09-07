@@ -40,6 +40,13 @@
     from-sky-400 
     to-indigo-600
 }
+.gradient-3{
+    @apply
+    bg-gradient-to-r
+    from-transparent
+    via-purple-800
+    to-blue-800
+}
 
 
 .heading {
