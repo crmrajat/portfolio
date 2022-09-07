@@ -6,8 +6,6 @@ const Experience = (props) => {
             return 'Present';
         }
         return (
-            date.getDate() +
-            ' ' +
             date.toLocaleString('default', { month: 'short' }) +
             ' ' +
             date.getFullYear()
@@ -25,8 +23,8 @@ const Experience = (props) => {
                             key={'exp' + index}
                             className="mb-16 sm:mb-10 flex flex-wrap md:flex-nowrap"
                         >
-                            <div className="md:w-72 md:mb-0 mb-4 flex-shrink-0 flex flex-col ">
-                                <span className=" text-white text-lg my-4 sm:font-bold capitalize tracking-wide">
+                            <div className="md:w-72 md:mb-0 mb-4 flex-shrink-0 flex flex-col">
+                                <span className=" text-white text-lg sm:font-bold capitalize tracking-wide">
                                     {item.companyName}
                                 </span>
                                 <span className="text-emerald-300 sm:text-lg font-light">
