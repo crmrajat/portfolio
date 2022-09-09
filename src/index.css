@@ -22,8 +22,8 @@
 .gradient-1{
     @apply
     bg-gradient-to-r
-    from-emerald-300 
-    to-indigo-500
+    from-emerald-500 
+    to-sky-500
 }
 
 .gradient-2{

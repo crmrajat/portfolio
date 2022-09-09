@@ -20,8 +20,6 @@ module.exports = {
                 // Projects gif url
                 p1: "url('/src/assets/a1.gif')",
                 p2: "url('/src/assets/a2.gif')",
-                p3: "url('/src/assets/a3.gif')",
-                p4: "url('/src/assets/a4.gif')",
             },
         },
     },

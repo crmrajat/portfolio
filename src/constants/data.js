@@ -27,13 +27,6 @@ export const ProjectsData = [
         codeUrl: 'www.google.com',
         gif: 'bg-p2',
     },
-    {
-        name: 'Speech to Text',
-        about: 'Converts speech to text ',
-        websiteUrl: 'www.google.com',
-        codeUrl: 'www.google.com',
-        gif: 'bg-p3',
-    },
 ];
 
 export const IntroductionData = [
