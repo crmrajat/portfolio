@@ -11,6 +11,9 @@ npx tailwindcss init -p
 
 npm install gh-pages --save-dev
 
+add the base property in the vite.config file
+base: '/project-name/',
+
 add homepage to package.json
 "homepage": "https://git-username.github.io/repo-name",
 
