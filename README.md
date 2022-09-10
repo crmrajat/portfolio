@@ -1,34 +1,37 @@
-# Create a new vite project
+## Create a new vite project using
 
-npm create vite@latest
+`npm create vite@latest`
 
-# Install the tailwind css for react
+## Install Tailwind Css Library using
 
+```
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
+```
 
-# Install GitHub Pages package
+## Build and Deployment
 
-npm install gh-pages --save-dev
+-   Go to your `vite.config.js` file. And add your base url to it.
 
-<!-- add homepage to package.json
-"homepage": "https://git-username.github.io/repo-name",
+    > export default defineConfig({
+    > base: '/project-name/', ⬅️
+    > plugins: [react()],
+    > });
 
-add scripts to package.json
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build",
--->
+-   Now build the project
 
-add the base property in the vite.config file:-
-base: '/project-name/',
+    > npm run build
 
-now build the project using :- npm run build
+-   Add _/dist_ folder into your repo
 
-push the dist folder to the gh-pages :-
-git add dist -f
+    > git add dist -f
 
-commit the changes:-
-git commit -m "Adding the dist "
+-   Commit the changes
 
-create sub tree of our master branch:-
-git subtree push --prefix dist origin gh-pages
+    > git commit -m "Adding dist"
+
+-   Push the dist to a new gh-pages branch
+
+    > git subtree push --prefix dist origin gh-pages
+
+-   Deployment Complete ✅
