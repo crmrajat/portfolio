@@ -1,17 +1,6 @@
 const Experience = (props) => {
     const experienceList = props.data;
 
-    const formatDate = (date) => {
-        if (date === null || date === undefined) {
-            return 'Present';
-        }
-        return (
-            date.toLocaleString('default', { month: 'short' }) +
-            ' ' +
-            date.getFullYear()
-        );
-    };
-
     return (
         <section id="experienceView" className="card">
             <h1 className="heading">Experience 🧗🏽‍♂️</h1>
@@ -31,9 +20,7 @@ const Experience = (props) => {
                                     {item.post}
                                 </span>
                                 <span className=" text-emerald-100 sm:text-lg  font-light">
-                                    {formatDate(item.startDate) +
-                                        ' - ' +
-                                        formatDate(item.endDate)}
+                                    {item.startDate + ' - ' + item.endDate}
                                 </span>
                             </div>
                             <ul className="paragraph md:flex-grow list-disc list-inside">
