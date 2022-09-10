@@ -16,7 +16,8 @@ npm install gh-pages --save-dev
 
 add scripts to package.json
 "predeploy": "npm run build",
-"deploy": "gh-pages -d build", -->
+"deploy": "gh-pages -d build",
+-->
 
 add the base property in the vite.config file:-
 base: '/project-name/',
