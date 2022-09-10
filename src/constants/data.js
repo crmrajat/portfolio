@@ -63,7 +63,7 @@ export const SkillsData = [
 export const ExperienceData = [
     {
         companyName: 'Wishworks Solutions',
-        startDate: new Date('april-2020').toISOString(),
+        startDate: new Date('april-2020'),
         endDate: null,
         post: 'Software developer',
         points: [
@@ -75,8 +75,8 @@ export const ExperienceData = [
     },
     {
         companyName: 'Wishworks Solutions',
-        startDate: new Date('october-2019').toISOString(),
-        endDate: new Date('april-2020').toISOString(),
+        startDate: new Date('october-2019'),
+        endDate: new Date('april-2020'),
         post: 'Intern',
         points: [
             'Worked closely with the development team to create a web app in Angular.',
@@ -86,8 +86,8 @@ export const ExperienceData = [
     },
     {
         companyName: 'World Wide Fund for Nature',
-        startDate: new Date('july-2018').toISOString(),
-        endDate: new Date('september-2018').toISOString(),
+        startDate: new Date('july-2018'),
+        endDate: new Date('september-2018'),
         post: 'Intern',
         points: [
             'Maintaining, optimizing, troubleshooting, and improving the main website.',
