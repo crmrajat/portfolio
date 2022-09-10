@@ -1,10 +1,11 @@
 const Experience = (props) => {
     const experienceList = props.data;
 
-    const formatDate = (date) => {
-        if (date === undefined || date === null) {
+    const formatDate = (data) => {
+        if (data === null || data === undefined) {
             return 'Present';
         }
+        const date = new Date(data);
         return (
             date.toLocaleString('default', { month: 'short' }) +
             ' ' +
