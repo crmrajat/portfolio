@@ -46,6 +46,7 @@ export const SkillsData = [
     'Html',
     'Css',
     'JavaScript',
+    'Redux',
     'Tailwind',
     'Bootstrap',
     'Material UI',
