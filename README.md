@@ -11,14 +11,12 @@ npx tailwindcss init -p
 
 ## Build and Deployment
 
-<!-- NOTE :
+NOTE :
 
--   Run this command
-    `npm run deploy`
--   Then commit and push to master branch
-    `git push origin master`
+    1. git push origin master
+    2. npm run deploy
 
---- -->
+---
 
 -   Go to your `vite.config.js` file. And add your base url to it.
 
