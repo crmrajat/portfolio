@@ -17,7 +17,7 @@ npm install gh-pages --save-dev
 
 ## Build and Deployment
 
--   Commit and Push the current chages to the master branch
+🚩 Follow this when deploying for the first time
 
 -   Go to your `vite.config.js` file. And add your base url to it.
 
@@ -43,3 +43,10 @@ npm install gh-pages --save-dev
     > git subtree push --prefix dist origin gh-pages
 
 -   Deployment Complete ✅
+
+---
+
+🚩 Follow this when updating the deployed project
+
+-   Commit and Push the current chages to the master branch
+-   Now run the `npm run deploy`
