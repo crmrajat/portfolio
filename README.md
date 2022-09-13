@@ -9,6 +9,12 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+## Install Github Pages for hosting
+
+```
+npm install gh-pages --save-dev
+```
+
 ## Build and Deployment
 
 -   Go to your `vite.config.js` file. And add your base url to it.
