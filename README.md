@@ -17,6 +17,8 @@ npm install gh-pages --save-dev
 
 ## Build and Deployment
 
+-   Commit and Push the current chages to the master branch
+
 -   Go to your `vite.config.js` file. And add your base url to it.
 
     > export default defineConfig({
