@@ -1,4 +1,5 @@
-import me from '../assets/me.jpg';
+import me from '../assets/me.svg';
+// import me from '../assets/me.jpg';
 
 const Introduction = (props) => {
     const aboutMe = props.data;

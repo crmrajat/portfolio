@@ -18,8 +18,9 @@ module.exports = {
             },
             backgroundImage: {
                 // Projects gif url
-                p1: "url('/src/assets/a1.gif')",
-                p2: "url('/src/assets/a2.gif')",
+                // p2: "url('/src/assets/a2.gif')",
+                chatingale: "url('/src/assets/chatingale.png')",
+                musicfox: "url('/src/assets/musicfox.png')",
             },
         },
     },

@@ -18,14 +18,14 @@ export const ProjectsData = [
         about: 'A real time chat application',
         websiteUrl: 'www.google.com',
         codeUrl: 'www.google.com',
-        gif: 'bg-p1',
+        gif: 'bg-chatingale',
     },
     {
         name: 'Text to Speech',
         about: 'Converts text to speech ',
         websiteUrl: 'www.google.com',
         codeUrl: 'www.google.com',
-        gif: 'bg-p2',
+        gif: 'bg-musicfox',
     },
 ];
 
