@@ -23,7 +23,7 @@ export const ProjectsData = [
     {
         name: 'Music Fox',
         about: 'Get the lyrics of your favourite songs',
-        websiteUrl: 'www.google.com',
+        websiteUrl: 'https://crmrajat.github.io/music-fox',
         codeUrl: 'https://github.com/crmrajat/music-fox',
         gif: 'bg-musicfox',
     },
