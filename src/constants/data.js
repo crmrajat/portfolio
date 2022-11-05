@@ -16,15 +16,15 @@ export const ProjectsData = [
     {
         name: 'Chatingale',
         about: 'A real time chat application',
-        websiteUrl: 'www.google.com',
-        codeUrl: 'www.google.com',
+        websiteUrl: 'https://chatingale.herokuapp.com/',
+        codeUrl: 'https://github.com/crmrajat/chatingale',
         gif: 'bg-chatingale',
     },
     {
-        name: 'Text to Speech',
-        about: 'Converts text to speech ',
+        name: 'Music Fox',
+        about: 'Get the lyrics of your favourite songs',
         websiteUrl: 'www.google.com',
-        codeUrl: 'www.google.com',
+        codeUrl: 'https://github.com/crmrajat/music-fox',
         gif: 'bg-musicfox',
     },
 ];
