@@ -3,7 +3,7 @@ const Experience = (props) => {
 
     return (
         <section id="experienceView" className="card">
-            <h1 className="heading">Experience 🧗🏽‍♂️</h1>
+            <h1 className="heading">Experience 🧗🏻‍♂️</h1>
 
             <div className="lg:w-4/5 mx-auto">
                 {experienceList.map((item, index) => {

@@ -24,7 +24,7 @@ const Introduction = (props) => {
                 />
             </section>
             <section className="flex-1 ">
-                <h1 className="heading">Introduction 👨🏽‍💻</h1>
+                <h1 className="heading">Introduction 👨🏻‍💻</h1>
 
                 <div className="container">
                     <span className="paragraph">{aboutMe[0]}</span>
