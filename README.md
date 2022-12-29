@@ -48,5 +48,5 @@ npm install gh-pages --save-dev
 
 🚩 Follow this when updating the deployed project
 
--   Commit and Push the current chages to the master branch
+-   Commit and Push the current changes to the master branch
 -   Now run the `npm run deploy`

@@ -16,7 +16,7 @@ export const ProjectsData = [
     {
         name: 'Chatingale',
         about: 'A real time chat application',
-        websiteUrl: 'https://chatingale.herokuapp.com/',
+        websiteUrl: 'https://chatingale.onrender.com/',
         codeUrl: 'https://github.com/crmrajat/chatingale',
         gif: 'bg-chatingale',
     },
