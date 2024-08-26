@@ -14,18 +14,13 @@ import {
 } from './constants/data';
 
 function App() {
-    const [skills, setSkills] = useState(SkillsData);
-    const [projects, setProjects] = useState(ProjectsData);
-    const [introduction, setIntroduction] = useState(IntroductionData);
-    const [experience, setExperience] = useState(ExperienceData);
-
     return (
         <>
             <Navbar />
-            <Introduction data={introduction} />
-            <Projects data={projects} />
-            <Skills data={skills} />
-            <Experience data={experience} />
+            <Introduction data={IntroductionData} />
+            <Projects data={ProjectsData} />
+            <Skills data={SkillsData} />
+            <Experience data={ExperienceData} />
         </>
     );
 }

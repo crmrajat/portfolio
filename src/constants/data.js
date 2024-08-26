@@ -15,7 +15,7 @@
 export const ProjectsData = [
     {
         name: 'Chatingale',
-        about: 'A real time chat application',
+        about: 'A real-time chat application',
         websiteUrl: 'https://chatingale.onrender.com/',
         codeUrl: 'https://github.com/crmrajat/chatingale',
         gif: 'bg-chatingale',
@@ -32,25 +32,25 @@ export const ProjectsData = [
 export const IntroductionData = [
     '👋 Hi, My name is ',
     'Rajat Bora',
-    ' and i am an aspiring Full Stack Developer with a keen interest in new technologies. I have nearly ',
-    '3 years',
-    ' of experience in web development and contributed to a couple of projects for web and mobile environments.',
+    ' and I am a Senior Software Engineer with a growing interest in full-stack development. I have nearly ',
+    '4 years',
+    ' of experience in web development and have contributed to multiple projects for web and mobile environments.',
 ];
 
 export const SkillsData = [
     'React',
     'React-Native',
     'Angular',
-    'Node-JS',
+    'Node.js',
     'Django',
-    'Html',
-    'Css',
+    'HTML',
+    'CSS',
     'JavaScript',
     'Redux',
     'Tailwind',
     'Bootstrap',
     'Material UI',
-    'Scss',
+    'SCSS',
     'TypeScript',
     'Git',
     'Jira',
@@ -63,15 +63,28 @@ export const SkillsData = [
 
 export const ExperienceData = [
     {
+        companyName: 'Drabito Technologies',
+        startDate: 'May 2023',
+        endDate: 'Present',
+        post: 'Senior Software Engineer',
+        points: [
+            'Developed and maintained high-performance web applications using React, TypeScript, and Redux Toolkit.',
+            'Designed and implemented modern, responsive UI/UX interfaces with Shadcn.',
+            'Collaborated with testers, designers, and backend engineers to define and refine application features.',
+            'Led code reviews and mentored junior developers, promoting best practices.',
+            'Participated in Agile development processes, ensuring timely and effective feature delivery.',
+        ],
+    },
+    {
         companyName: 'Wishworks Solutions',
         startDate: 'Apr 2020',
-        endDate: 'Present',
-        post: 'Software developer',
+        endDate: 'Jan 2023',
+        post: 'Software Engineer',
         points: [
-            'Developed in-house web and mobile applications.',
-            'Collaborated with the back-end team to implement new features.',
-            'Assessed mockups and high-fidelity wireframes for projects.',
-            'Followed the mobile-first approach to develop modern and responsive websites.',
+            'Engineered and maintained in-house web and mobile applications using modern frontend technologies.',
+            'Collaborated with backend teams to integrate APIs and deploy new features.',
+            'Reviewed and implemented high-fidelity wireframes and mockups.',
+            'Optimized existing applications for performance improvements.',
         ],
     },
     {
@@ -80,9 +93,9 @@ export const ExperienceData = [
         endDate: 'Apr 2020',
         post: 'Intern',
         points: [
-            'Worked closely with the development team to create a web app in Angular.',
-            'Designed mockups and wireframes for projects.',
-            'Update and improve existing company websites.',
+            'Contributed to the development of a web application using Angular.',
+            'Designed and developed mockups and wireframes for new projects.',
+            'Assisted in integrating frontend components with backend services.',
         ],
     },
     {
@@ -91,8 +104,9 @@ export const ExperienceData = [
         endDate: 'Sep 2018',
         post: 'Intern',
         points: [
-            'Maintaining, optimizing, troubleshooting, and improving the main website.',
-            'Regularly monitoring the Google Analytics data and generating reports.',
+            'Maintained and optimized the main website, addressing performance bottlenecks.',
+            'Monitored website performance metrics using Google Analytics and generated detailed reports.',
+            'Assisted in the implementation of SEO best practices.',
         ],
     },
 ];
