@@ -1,4 +1,4 @@
-## [Portfolio 💖](https://crmrajat.github.io/portfolio/).
+## [Portfolio 💖](https://crmrajat.github.io/portfolio/)
 
 ## Create a new vite project using
 
