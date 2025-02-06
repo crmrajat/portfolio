@@ -1,28 +1,14 @@
-/**
- * NOTE: 📝
- *
- * 👉 For adding the gif of a project ->
- * First place the gif file in the assets folder.
- * Then add the new gif url as a new property in backgroundImage object inside the tailwind config file.
- * Now add the class name used to set the gif as background to ProjectsData gif property.
- *
- * 👉 For changing the introduction image ->
- * Replace the new image inside assets folder with same name.
- *
- *
- */
-
 export const ProjectsData = [
     {
         name: 'Chatingale',
-        about: 'A real-time chat application',
+        about: 'A real-time chat application built with React and Socket.io',
         websiteUrl: 'https://chatingale.onrender.com/',
         codeUrl: 'https://github.com/crmrajat/chatingale',
         gif: 'bg-chatingale',
     },
     {
         name: 'Music Fox',
-        about: 'Get the lyrics of your favourite songs',
+        about: 'Get the lyrics of your favorite songs, built using React and API integration',
         websiteUrl: 'https://crmrajat.github.io/music-fox',
         codeUrl: 'https://github.com/crmrajat/music-fox',
         gif: 'bg-musicfox',
@@ -32,9 +18,9 @@ export const ProjectsData = [
 export const IntroductionData = [
     '👋 Hi, My name is ',
     'Rajat Bora',
-    ' and I am a Senior Software Engineer with a growing interest in full-stack development. I have nearly ',
-    '4 years',
-    ' of experience in web development and have contributed to multiple projects for web and mobile environments.',
+    ' and I am an experienced Frontend Engineer with over ',
+    '5 years',
+    ' of experience in building scalable web applications with React, TypeScript, and modern UI/UX principles. I am currently expanding into full-stack development.',
 ];
 
 export const SkillsData = [
@@ -42,37 +28,38 @@ export const SkillsData = [
     'React-Native',
     'Angular',
     'Node.js',
-    'Django',
+    'Express.js',
+    'MongoDB',
+    'JavaScript',
+    'TypeScript',
+    'Redux',
+    'Tailwind CSS',
+    'Bootstrap',
+    'Material-UI',
     'HTML',
     'CSS',
-    'JavaScript',
-    'Redux',
-    'Tailwind',
-    'Bootstrap',
-    'Material UI',
     'SCSS',
-    'TypeScript',
     'Git',
+    'GitHub',
+    'GitLab',
     'Jira',
-    'Trello',
     'Figma',
-    'Adobe XD',
-    'Illustrator',
-    'Photoshop',
+    'Vite',
+    'Vitest',
 ];
 
 export const ExperienceData = [
     {
         companyName: 'Drabito Technologies',
         startDate: 'May 2023',
-        endDate: 'Present',
+        endDate: 'Nov 2024',
         post: 'Senior Software Engineer',
         points: [
-            'Developed and maintained high-performance web applications using React, TypeScript, and Redux Toolkit.',
-            'Designed and implemented modern, responsive UI/UX interfaces with Shadcn.',
-            'Collaborated with testers, designers, and backend engineers to define and refine application features.',
-            'Led code reviews and mentored junior developers, promoting best practices.',
-            'Participated in Agile development processes, ensuring timely and effective feature delivery.',
+            'Developed and optimized React, TypeScript, and Redux Toolkit applications, increasing load speed by 30% and reducing bugs by 25%.',
+            'Designed responsive UI/UX interfaces with Shadcn, improving cross-device user experience.',
+            'Integrated RESTful APIs using RTK Query, Axios, and Fetch, ensuring seamless data flow and third-party service integration.',
+            'Mentored and led 4 junior developers, reducing code review time by 50%.',
+            'Actively contributed to Agile processes with sprint planning, stand-ups, and retrospectives.',
         ],
     },
     {
@@ -81,10 +68,9 @@ export const ExperienceData = [
         endDate: 'Jan 2023',
         post: 'Software Engineer',
         points: [
-            'Engineered and maintained in-house web and mobile applications using modern frontend technologies.',
-            'Collaborated with backend teams to integrate APIs and deploy new features.',
-            'Reviewed and implemented high-fidelity wireframes and mockups.',
-            'Optimized existing applications for performance improvements.',
+            'Developed and maintained web and mobile applications using React, React Native, and Angular.',
+            'Collaborated with backend teams to integrate APIs, ensuring system scalability.',
+            'Refactored legacy React code, reducing bundle size by 20% and improving page load times.',
         ],
     },
     {
@@ -93,9 +79,8 @@ export const ExperienceData = [
         endDate: 'Apr 2020',
         post: 'Intern',
         points: [
-            'Contributed to the development of a web application using Angular.',
-            'Designed and developed mockups and wireframes for new projects.',
-            'Assisted in integrating frontend components with backend services.',
+            'Developed interactive Angular-based frontend features, improving user experience.',
+            'Assisted in frontend-backend integration, ensuring smooth data flow and system consistency.',
         ],
     },
     {
@@ -104,9 +89,8 @@ export const ExperienceData = [
         endDate: 'Sep 2018',
         post: 'Intern',
         points: [
-            'Maintained and optimized the main website, addressing performance bottlenecks.',
-            'Monitored website performance metrics using Google Analytics and generated detailed reports.',
-            'Assisted in the implementation of SEO best practices.',
+            'Maintained and optimized the main website, enhancing performance and user experience.',
+            'Assisted in implementing SEO best practices, improving website visibility.',
         ],
     },
 ];

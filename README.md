@@ -1,54 +1,79 @@
-## [Portfolio 💖](https://crmrajat.github.io/portfolio/)
+# [Live Portfolio 💖](https://crmrajat.github.io/portfolio/)
 
-## Create a new vite project using
+## Overview
 
-`npm create vite@latest`
-
-## Install Tailwind Css Library using
-
-```
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-```
-
-## Install Github Pages for hosting
-
-```
-npm install gh-pages --save-dev
-```
+A personal portfolio website built with React and Vite, showcasing my projects and skills.
 
 ## Build and Deployment
 
-🚩 Follow this when deploying for the first time
+### 🚩 First-time Deployment
 
--   Go to your `vite.config.js` file. And add your base url to it.
+1. Configure Vite base URL
 
-    > export default defineConfig({
-    > base: '/project-name/', ⬅️
-    > plugins: [react()],
-    > });
+    ```javascript
+    // vite.config.js
+    export default defineConfig({
+        base: '/portfolio/', // Replace with your repository name
+        plugins: [react()],
+    });
+    ```
 
--   Now build the project
+2. Build the project
 
-    > npm run build
+    ```bash
+    npm run build
+    ```
 
--   Add _/dist_ folder into your repo
+3. Add and commit the dist folder
 
-    > git add dist -f
+    ```bash
+    git add dist -f
+    git commit -m "Adding dist for deployment"
+    ```
 
--   Commit the changes
+4. Push to GitHub Pages branch
+    ```bash
+    git subtree push --prefix dist origin gh-pages
+    ```
 
-    > git commit -m "Adding dist"
+### 🚩 Updating Deployed Project
 
--   Push the dist to a new gh-pages branch
+1. Make your changes and commit to main branch
 
-    > git subtree push --prefix dist origin gh-pages
+    ```bash
+    git add .
+    git commit -m "Your update message"
+    git push origin main
+    ```
 
--   Deployment Complete ✅
+2. Deploy updates
+    ```bash
+    npm run deploy
+    ```
 
----
+## Scripts
 
-🚩 Follow this when updating the deployed project
+-   `npm run dev` - Start development server
+-   `npm run build` - Build for production
+-   `npm run deploy` - Deploy to GitHub Pages
 
--   Commit and Push the current changes to the master branch
--   Now run the `npm run deploy`
+## Tech Stack
+
+-   React
+-   Vite
+-   GitHub Pages
+
+## Local Development
+
+1. Clone the repository
+    ```bash
+    git clone https://github.com/yourusername/portfolio.git
+    ```
+2. Install dependencies
+    ```bash
+    npm install
+    ```
+3. Start the development server
+    ```bash
+    npm run dev
+    ```
