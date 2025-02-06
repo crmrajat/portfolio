@@ -54,7 +54,6 @@ npm run automate "Your commit message"
 -   `npm run dev` - Start development server
 -   `npm run build` - Build for production
 -   `npm run deploy` - Deploy to GitHub Pages
--   `npm run push` - Git add, commit, and push changes
 
 ## Tech Stack
 

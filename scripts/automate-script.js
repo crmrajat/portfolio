@@ -1,7 +1,7 @@
 /**
  * This script automates two tasks:
- * 1. Stages, commits, and pushes changes to git (via git-push-script)
- * 2. Builds and deploys to Github Pages (via npm run deploy)
+ * 1. Stages, commits, and pushes changes to git
+ * 2. Builds and deploys to Github
  */
 
 import { execSync } from 'child_process';
