@@ -17,18 +17,18 @@ if (!commitMessage) {
 
 try {
     // Execute the git-push-script
-    console.log(' - - - - - 🔄️ Running the git-push-script - - - - - ');
+    console.log(' - - - - - - 🔄️ Running the git-push-script - - - - - - ');
 
     execSync('npm run push ' + commitMessage, { stdio: 'inherit' });
 
-    console.log(' - - - - - ✅ git-push-script successful !  - - - - - ');
+    console.log(' - - - - - - ✅ git-push-script successful !  - - - - - - ');
 
     // Execute the NPM publish command
-    console.log(' - - - - - 🔄️ Running the publish to Github - - - - - ');
+    console.log(' - - - - - - 🔄️ Running the publish to Github - - - - - - ');
 
     execSync('npm run deploy', { stdio: 'inherit' });
 
-    console.log(' - - - - - ✅ Publish to Github successful !  - - - - - ');
+    console.log(' - - - - - - ✅ Publish to Github successful !  - - - - - - ');
 } catch (error) {
     console.error('❌ Failed to push changes:');
     console.error('An error occurred:', error.message);
