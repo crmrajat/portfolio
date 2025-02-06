@@ -16,21 +16,29 @@ if (!commitMessage) {
 }
 
 try {
-    // Execute the git-push-script
-    console.log(' - - - - - - 🔄️ Running the git-push-script - - - - - - ');
+    // Build the project
+    console.log(' - - - - - - 🔄️ Building project - - - - - - ');
+    execSync('npm run build', { stdio: 'inherit' });
+    console.log(' - - - - - - ✅ Build successful! - - - - - - ');
 
-    execSync('npm run push ' + commitMessage, { stdio: 'inherit' });
+    // Stage changes
+    console.log(' - - - - - - 🔄️ Staging changes - - - - - - ');
+    execSync('git add .', { stdio: 'inherit' });
+    console.log(' - - - - - - ✅ Changes staged! - - - - - - ');
 
-    console.log(' - - - - - - ✅ git-push-script successful !  - - - - - - ');
+    // Commit changes
+    console.log(' - - - - - - 🔄️ Committing changes - - - - - - ');
+    execSync(`git commit -m "${commitMessage}"`, { stdio: 'inherit' });
+    console.log(' - - - - - - ✅ Changes committed! - - - - - - ');
 
-    // Execute the NPM publish command
-    console.log(' - - - - - - 🔄️ Running the publish to Github - - - - - - ');
-
-    execSync('npm run deploy', { stdio: 'inherit' });
-
-    console.log(' - - - - - - ✅ Publish to Github successful !  - - - - - - ');
+    // Push changes
+    console.log(' - - - - - - 🔄️ Pushing to remote - - - - - - ');
+    execSync('git subtree push --prefix dist origin gh-pages', {
+        stdio: 'inherit',
+    });
+    console.log(' - - - - - - ✅ Changes pushed successfully! - - - - - - ');
 } catch (error) {
-    console.error('❌ Failed to push changes:');
+    console.error('❌ Failed to complete operation:');
     console.error('An error occurred:', error.message);
     process.exit(1);
 }
