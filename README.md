@@ -4,66 +4,9 @@
 
 A personal portfolio website built with React and Vite, showcasing my projects and skills.
 
-## Build and Deployment
+## 🚀 Quick Start
 
-### 🚩 First-time Deployment
-
-1. Configure Vite base URL
-
-    ```javascript
-    // vite.config.js
-    export default defineConfig({
-        base: '/portfolio/', // Replace with your repository name
-        plugins: [react()],
-    });
-    ```
-
-2. Build the project
-
-    ```bash
-    npm run build
-    ```
-
-3. Add and commit the dist folder
-
-    ```bash
-    git add dist -f
-    git commit -m "Adding dist for deployment"
-    ```
-
-4. Push to GitHub Pages branch
-    ```bash
-    git subtree push --prefix dist origin gh-pages
-    ```
-
-### 🚩 Updating Deployed Project
-
-1. Make your changes and commit to main branch
-
-    ```bash
-    git add .
-    git commit -m "Your update message"
-    git push origin main
-    ```
-
-2. Deploy updates
-    ```bash
-    npm run deploy
-    ```
-
-## Scripts
-
--   `npm run dev` - Start development server
--   `npm run build` - Build for production
--   `npm run deploy` - Deploy to GitHub Pages
-
-## Tech Stack
-
--   React
--   Vite
--   GitHub Pages
-
-## Local Development
+### Local Development
 
 1. Clone the repository
     ```bash
@@ -77,3 +20,44 @@ A personal portfolio website built with React and Vite, showcasing my projects a
     ```bash
     npm run dev
     ```
+
+## 🛠️ Build and Deployment
+
+### First-time Deployment
+
+1. Configure Vite base URL
+
+    ```javascript
+    // vite.config.js
+    export default defineConfig({
+        base: '/portfolio/', // Replace with your repository name
+        plugins: [react()],
+    });
+    ```
+
+2. Build and deploy
+    ```bash
+    npm run deploy
+    ```
+
+### Updating Deployed Project
+
+Use the automated script to build, commit, and deploy in one command:
+
+```bash
+npm run automate "Your commit message"
+```
+
+## Scripts
+
+-   `npm run automate` - Automated build, commit, and deploy
+-   `npm run dev` - Start development server
+-   `npm run build` - Build for production
+-   `npm run deploy` - Deploy to GitHub Pages
+-   `npm run push` - Git add, commit, and push changes
+
+## Tech Stack
+
+-   React
+-   Vite
+-   GitHub Pages

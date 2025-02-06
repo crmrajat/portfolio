@@ -1,8 +1,7 @@
 /**
- * This script automates three tasks:
- * 1. Builds local scripts
- * 2. Stages, commits, and pushes changes to git
- * 3. Optionally publishes to Github (when using automate:full)
+ * This script automates two tasks:
+ * 1. Stages, commits, and pushes changes to git (via git-push-script)
+ * 2. Builds and deploys to Github Pages (via npm run deploy)
  */
 
 import { execSync } from 'child_process';
@@ -29,7 +28,7 @@ try {
 
     execSync('npm run deploy', { stdio: 'inherit' });
 
-    console.log(' - - - - - ✅ publish to Github successful !  - - - - - ');
+    console.log(' - - - - - ✅ Publish to Github successful !  - - - - - ');
 } catch (error) {
     console.error('❌ Failed to push changes:');
     console.error('An error occurred:', error.message);
