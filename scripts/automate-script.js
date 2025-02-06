@@ -31,11 +31,14 @@ try {
     execSync(`git commit -m "${commitMessage}"`, { stdio: 'inherit' });
     console.log(' - - - - - - ✅ Changes committed! - - - - - - ');
 
-    // Push changes
+    // Push changes to gh pages
     console.log(' - - - - - - 🔄️ Pushing to remote - - - - - - ');
     execSync('git subtree push --prefix dist origin gh-pages', {
         stdio: 'inherit',
     });
+
+    // Push changes to the main
+    execSync('git push', { stdio: 'inherit' });
     console.log(' - - - - - - ✅ Changes pushed successfully! - - - - - - ');
 } catch (error) {
     console.error('❌ Failed to complete operation:');
