@@ -1,9 +1,9 @@
 const Projects = (props) => {
     const projectsList = props.data;
 
-    const openInNewTab = (url) =>{
+    const openInNewTab = (url) => {
         window.open(url, '_blank').focus();
-      }
+    };
 
     return (
         <section id="projectView" className="card">
@@ -24,14 +24,20 @@ const Projects = (props) => {
                                     {item.about}
                                 </p>
                                 <div className="flex flex-col gap-4 mt-4">
-                                    <button className="btn" onClick={() => {
-                                        openInNewTab(item.codeUrl);
-                                    }}>
+                                    <button
+                                        className="btn"
+                                        onClick={() => {
+                                            openInNewTab(item.codeUrl);
+                                        }}
+                                    >
                                         View Code 🧩
                                     </button>
-                                    <button className="btn"  onClick={() => {
-                                        openInNewTab(item.websiteUrl);
-                                    }}>
+                                    <button
+                                        className="btn"
+                                        onClick={() => {
+                                            openInNewTab(item.websiteUrl);
+                                        }}
+                                    >
                                         View Demo 👀
                                     </button>
                                 </div>
